@@ -1,8 +1,17 @@
 package com.aicxc.singleton;
 
 /**
- * @author Hyy
- * @version 2019/07/29 16:59
+ * 饿汉模式，线程安全
  */
 public class SingletonEH {
+
+    private static final SingletonEH instance = new SingletonEH();
+
+    private SingletonEH() {
+
+    }
+
+    public SingletonEH getInstance() {
+        return instance;
+    }
 }
