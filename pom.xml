@@ -6,7 +6,11 @@
 
   <groupId>com.aicxc</groupId>
   <artifactId>design-patterns-in-java</artifactId>
+  <packaging>pom</packaging>
   <version>2019</version>
+  <modules>
+    <module>singleton</module>
+  </modules>
 
   <name>design-patterns-in-java</name>
   <!-- FIXME change it to the project's website -->
