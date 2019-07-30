@@ -11,7 +11,7 @@ public class SingletonEH {
 
     }
 
-    public SingletonEH getInstance() {
+    public static SingletonEH getInstance() {
         return instance;
     }
 }

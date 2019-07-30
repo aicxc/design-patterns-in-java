@@ -5,7 +5,7 @@ package com.aicxc.singleton;
  */
 public class SingletonLH {
 
-    private SingletonLH instance;
+    private static SingletonLH instance;
 
     private SingletonLH() {
 
@@ -14,7 +14,7 @@ public class SingletonLH {
     /**
      * 1、线程不安全
      */
-    public SingletonLH getInstance1() {
+    public static SingletonLH getInstance1() {
         if (instance == null) {
             instance = new SingletonLH();
         }
@@ -24,7 +24,7 @@ public class SingletonLH {
     /**
      * 2、同步方法，线程安全
      */
-    public synchronized SingletonLH getInstance2() {
+    public static synchronized SingletonLH getInstance2() {
         if (instance == null) {
             instance = new SingletonLH();
         }
@@ -34,7 +34,7 @@ public class SingletonLH {
     /**
      * 3、双重检查锁定，线程安全
      */
-    public SingletonLH getInstance3() {
+    public static SingletonLH getInstance3() {
         if (instance == null) {
             synchronized (SingletonLH.class) {
                 if (instance == null) {
@@ -48,7 +48,7 @@ public class SingletonLH {
     /**
      * 4、静态内部类，线程安全，避免同步带来的开销
      */
-    public SingletonLH getInstance4() {
+    public static SingletonLH getInstance4() {
         return SingletonHolder.SINGLETON_LH;
     }
 
