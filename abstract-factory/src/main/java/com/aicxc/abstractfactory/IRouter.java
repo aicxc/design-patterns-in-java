@@ -1,8 +1,13 @@
 package com.aicxc.abstractfactory;
 
 /**
- * @author Hyy
- * @version 2019/07/30 9:56
+ * 路由器
  */
 public interface IRouter {
+
+    void turnOn();
+
+    void turnOff();
+
+    void use();
 }

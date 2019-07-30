@@ -10,6 +10,7 @@
     <version>2019</version>
     <modules>
         <module>singleton</module>
+        <module>abstract-factory</module>
     </modules>
 
     <name>design-patterns-in-java</name>

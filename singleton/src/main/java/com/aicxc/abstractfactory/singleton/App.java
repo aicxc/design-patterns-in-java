@@ -1,4 +1,4 @@
-package com.aicxc.singleton;
+package com.aicxc.abstractfactory.singleton;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

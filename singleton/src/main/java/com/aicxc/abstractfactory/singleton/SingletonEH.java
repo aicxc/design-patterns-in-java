@@ -1,4 +1,4 @@
-package com.aicxc.singleton;
+package com.aicxc.abstractfactory.singleton;
 
 /**
  * 饿汉模式，线程安全

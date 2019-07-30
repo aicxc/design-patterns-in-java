@@ -1,4 +1,4 @@
-package com.aicxc.abstractfactory.singleton;
+package com.aicxc.abstractfactory;
 
 import static org.junit.Assert.assertTrue;
 
